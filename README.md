@@ -15,12 +15,13 @@ In this project, the neural network model is built with TensorFlow Keras functio
 * pix2pix from tensorflow_examples.models.pix2pix (credit to : https://github.com/tensorflow/examples)
 
 ### STEP 1: Load and store of data
-
+The images loaded and stored as variable using opencv imread method. There're 4 sets of dataset provided: inputs and masking for test and train. The train dataset will be used to train the model and 20% of it will be splited abd used for validation, whereas the test dataset will be used for wild test.
 
 ### STEP 2: Preparation of data before training
-
+The images are converted into numpy array and expend dimension and normalize
 
 ### STEP 3: Model Design
+In this project, MobileNetV2 model is transferred to train this model. The model is then trained for 20 epochs.
 
 #### The Model flow diagram:
 ![Model!](/reference/model.png "Model")
